@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html>
 <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-    <?php get_header(); ?>
+<body>
+    <?php get_template_part('parts/header'); ?>
 
     <div class="content">
         <h1>Welcome to <?php bloginfo( 'name' ); ?></h1>
@@ -24,6 +23,6 @@
         ?>
     </div>
 
-    <?php get_footer(); ?>
+    <?php get_template_part('parts/footer'); ?>
 </body>
 </html>
