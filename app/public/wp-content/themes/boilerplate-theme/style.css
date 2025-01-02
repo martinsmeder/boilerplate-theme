@@ -1,0 +1,18 @@
+/*
+Theme Name: Boilerplate Theme
+Author: Martin Smeder
+Description: A simple boilerplate theme for future projects
+Version: 1.0
+
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header .logo img {
+    max-width: 100%;
+    height: auto;
+}
