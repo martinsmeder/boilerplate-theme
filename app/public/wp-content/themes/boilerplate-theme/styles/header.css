@@ -9,3 +9,27 @@ header .logo img {
     height: 50px;
     border-radius: 5px;
 }
+
+header .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3rem;
+}
+
+header .menu .contact-item {
+    background: #000;
+    border: 2px solid #000;
+    border-radius: 25px;
+    padding: 3px 10px;
+}
+
+header .menu .contact-item a {
+    color: #fff;
+}
