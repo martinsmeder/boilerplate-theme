@@ -9,7 +9,13 @@
         ?>
     </div>
 
-    <nav>
+    <nav class="desktop">
         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
     </nav>
+
+    <nav class="mobile">
+        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+    </nav>
+
+    <!-- Add icon.................. -->
 </header>
