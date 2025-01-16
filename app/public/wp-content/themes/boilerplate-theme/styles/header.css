@@ -10,6 +10,8 @@ header .logo img {
     border-radius: 5px;
 }
 
+/* ============================= Desktop ================================= */
+
 header .desktop .menu {
     list-style: none;
     display: flex;
@@ -30,6 +32,96 @@ header .desktop .menu .contact-item a {
     color: #fff;
 }
 
-header .mobile {
+/* ============================= Mobile ================================== */
+
+header .menu-icon {
     display: none;
+    width: 20px;
+    cursor: pointer;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+
+    80% {
+        transform: scaleY(1.1)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+header .mobile {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    transform: translate(-50%, 0);
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    text-align: center;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top left;
+}
+
+header .mobile ul {
+    list-style-type: none;
+    display: block;
+}
+
+header .mobile ul a {
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.mobile .current-menu-item a {
+    background: #000;
+    color: #fff;
+    box-shadow: 0 0 0.1rem #FFF;
+}
+
+.mobile a:hover {
+    text-decoration: underline;
+}
+
+/* ========================== Media Queries ============================== */
+
+@media (max-width: 850px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .menu-icon {
+        display: block;
+    }
+}
+
+@media (min-width: 850px) {
+    .mobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 350px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    header .logo {
+        padding-bottom: 10px;
+    }
+
+    header .mobile {
+        top: 110px;
+    }
 }

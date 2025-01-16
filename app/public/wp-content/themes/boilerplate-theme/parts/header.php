@@ -17,5 +17,5 @@
         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
     </nav>
 
-    <!-- Add icon.................. -->
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/hamburger-menu-black.png" class="menu-icon" alt="Menu">
 </header>

@@ -10,3 +10,8 @@ function enqueue_styles() {
         // ...
 }
 add_action('wp_enqueue_scripts', 'enqueue_styles');
+
+function enqueue_scripts() {
+        wp_enqueue_script('navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '1.0');
+}
+add_action('wp_enqueue_scripts', 'enqueue_scripts');
