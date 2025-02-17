@@ -1,0 +1,18 @@
+footer {
+    width: 100%;
+}
+
+footer .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .top .navigation ul {
+    list-style: none;
+}
+
+footer .bottom {
+    border-top: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+}

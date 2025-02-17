@@ -5,6 +5,10 @@
 }
 
 body {
+    min-height: 100vh;
     padding: 20px;
     font-family: "Roboto", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
