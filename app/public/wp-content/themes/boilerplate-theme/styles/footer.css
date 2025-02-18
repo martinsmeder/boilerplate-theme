@@ -5,14 +5,53 @@ footer {
 footer .top {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+footer .top .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+footer .top .contact a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer .top .contact a:hover {
+    text-decoration: underline;
+}
+
+footer .top .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
 footer .top .navigation ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+footer .top .navigation ul a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer .top .navigation ul a:hover {
+    text-decoration: underline;
 }
 
 footer .bottom {
     border-top: 1px solid #000;
+    padding-top: 5px;
     display: flex;
     justify-content: space-between;
+}
+
+footer .bottom .socials a {
+    color: #000;
 }
