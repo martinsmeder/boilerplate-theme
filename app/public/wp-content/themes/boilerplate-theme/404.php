@@ -1,4 +1,3 @@
-<!-- Used as a fallback (if no other templates exist) -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +11,11 @@
 <body>
     <?php get_template_part('parts/header'); ?>
 
-    <?php get_template_part('parts/main'); ?>
+    <main>
+        <h1>Page Not Found</h1>
+        <p>Sorry, the page you’re looking for doesn’t exist.</p>
+        <a href="<?php echo home_url(); ?>">Go Back Home</a>
+    </main>
 
     <?php get_template_part('parts/footer'); ?>
 </body>

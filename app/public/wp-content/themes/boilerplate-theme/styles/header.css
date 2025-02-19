@@ -32,6 +32,10 @@ header .desktop .menu .contact-item a {
     color: #fff;
 }
 
+header .desktop .menu .current-menu-item a {
+    text-decoration: underline;
+}
+
 /* ============================= Mobile ================================== */
 
 header .menu-icon {

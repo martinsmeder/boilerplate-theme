@@ -1,4 +1,4 @@
-<!-- Used as a fallback (if no other templates exist) -->
+<!-- Used for static pages (Home, About, Contact, etc.) -->
 <!DOCTYPE html>
 <html>
 <head>
